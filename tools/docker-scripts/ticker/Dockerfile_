@@ -1,0 +1,18 @@
+FROM node:16-alpine as base
+
+WORKDIR ./
+COPY package*.json /
+EXPOSE 8092
+
+FROM base as production
+ENV NODE_ENV=production
+RUN npm ci
+RUN npm run build
+COPY . /
+CMD ["node", "./dist/apps/ticker/main.js"]
+
+FROM base as dev
+ENV NODE_ENV=development
+RUN npm install
+COPY . /
+RUN npm run start:ticker

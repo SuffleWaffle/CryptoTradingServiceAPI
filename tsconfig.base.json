@@ -1,0 +1,66 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@cupo/*": [
+        "libs/*"
+      ],
+      "@cupo/backend/common": [
+        "libs/backend/common/src/index.ts"
+      ],
+      "@cupo/backend/constant": [
+        "libs/backend/constant/src/index.ts"
+      ],
+      "@cupo/backend/interface": [
+        "libs/backend/interface/src/index.ts"
+      ],
+      "@cupo/backend/queue": [
+        "libs/backend/queue/src/index.ts"
+      ],
+      "@cupo/backend/services": [
+        "libs/backend/services/src/index.ts"
+      ],
+      "@cupo/backend/storage": [
+        "libs/backend/storage/src/index.ts"
+      ],
+      "@cupo/event": [
+        "libs/event/src/index.ts"
+      ],
+      "@cupo/exchange": [
+        "libs/exchange/src/index.ts"
+      ],
+      "@cupo/indicators": [
+        "libs/indicators/src/index.ts"
+      ],
+      "@cupo/mail": [
+        "libs/mail/src/index.ts"
+      ],
+      "@cupo/timeseries": [
+        "libs/timeseries/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

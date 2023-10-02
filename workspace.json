@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "backend-common": "libs/backend/common",
+    "backend-constant": "libs/backend/constant",
+    "backend-interface": "libs/backend/interface",
+    "backend-queue": "libs/backend/queue",
+    "backend-services": "libs/backend/services",
+    "backend-storage": "libs/backend/storage",
+    "event": "libs/event",
+    "exchange": "libs/exchange",
+    "feeder": "apps/feeder",
+    "indicators": "libs/indicators",
+    "mail": "libs/mail",
+    "ticker": "apps/ticker",
+    "timeseries": "libs/timeseries",
+    "trader": "apps/trader",
+    "user-exchange": "apps/user-exchange"
+  }
+}

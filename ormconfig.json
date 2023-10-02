@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "_prod_username_",
+  "password": "_prod_password_",
+  "database": "kiwi",
+  "entities": ["./**/*.entity.js"],
+  "migrations": ["./migration/*"],
+  "cli": {
+    "migrationsDir": "libs/backend/storage/src/lib/postgres/migration"
+  }
+}

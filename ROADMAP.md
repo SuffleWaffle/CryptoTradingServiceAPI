@@ -1,0 +1,28 @@
+# Project Road map
+
+- Make different queues for open and close orders
+- ~~Add websockets for fetching tickers and active currencies~~
+- ~~Add websockets cluster with Redis for fetching exchanges data~~
+- add caching for REST API with Redis
+- ~~Add support of Binance exchange~~
+- ~~Add support of Binance US exchange~~
+- ~~Add support of Bitso exchange~~
+- ~~Add support of CoinbasePro exchange~~
+- ~~Add support of Bitfinex exchange~~
+- ~~Collect data from Redis to MongoDB, and clear Redis of old candles and indexed~~
+- ~~Collect trade orders to MongoDB, and clear Redis of archive orders~~
+- ~~Add JWT Bearer authentication~~
+- Add user session management, token expiration and refresh
+- ~~Add CORS restrictions for REST API~~
+- Add full user management by REST API: registration, login, logout, password reset, etc.
+- ~~Add user roles~~
+- Add user settings for trading: strategy parameters, exchanges, API keys, currencies, symbols and timeframes
+- Add user settings for notifications: email, SMS, Telegram, etc.
+- User wallet, deposits and withdrawals
+- Add user settings for wallet: currencies, addresses, etc.
+- Calculate profit in orders realtime
+- Add strategy parameter "trade balance" for limit maximum amount of money to trade
+- Divide indicator signals and order signals by different services and processors
+- ~~Make glue for M30, 2H, 4H candles from 1H and M15 candles~~
+- Add proxy for web-sockets
+- 

@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  ticker:
+    build:
+      context: ./tools/docker-scripts/ticker/
+      target: production
+    volumes:
+      - .:/apps/ticker/src
+    command: npm run start:dev
+    ports:
+      - "8092"
+    environment:
+      NODE_ENV: production
+      DEBUG: nodejs-docker-express:*

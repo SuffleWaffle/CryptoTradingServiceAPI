@@ -1,0 +1,5 @@
+export const MAXIMUM_EXCHANGE_SIGNALS_PER_TIME: number = +process.env.MAXIMUM_EXCHANGE_SIGNALS_PER_TIME || 21;
+export const BAD_SYMBOL_FRINGE = 13;
+export const CALCULATE_SIGNAL_NOT_OFTEN_MSECS = 5000;
+
+export const OPEN_ORDER_PAUSE = 1000 * 34;
